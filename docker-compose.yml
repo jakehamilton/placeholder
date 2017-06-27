@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+    nginx:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: jakehamilton/placeholder
+        ports:
+            - 80:80
+        restart: always
